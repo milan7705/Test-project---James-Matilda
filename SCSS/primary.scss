@@ -1,0 +1,23 @@
+// Variables
+@import "abstracts/variables";
+
+// Whole Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Abstract
+@import "abstracts/_variables.scss";
+
+//Base
+@import "base/base";
+
+//Components
+@import "components/buttons";
+@import "components/cards";
+
+//Layout
+@import "layout/forms";
+@import "layout/navigation";
+@import "layout/slider";
+
+// Media query
+@import "media query/mediaquery";

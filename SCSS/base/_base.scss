@@ -1,0 +1,120 @@
+html, body {
+  position: relative;
+  margin: 0;
+}
+.main-background {
+  background: url("../assets/home-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  position: absolute;
+    width: 100%;
+    top: 0;
+}
+.text-center {
+  text-align: center;
+}
+.section-padding {
+  padding: 75px 0;
+}
+.gray-section-padding {
+  padding: 35px 0;
+}
+// Gray section
+.gray-section {
+  background: $gray-10;
+  .gray-section-info {
+    text-align: center;
+    color: $white-10;
+    padding: 0px 24px;
+    &--gray-middle {
+      border-right: 1px solid $white-10;
+      border-left: 1px solid $white-10;
+    }
+    .gray-pos {
+      display: flex;
+      align-items: center;
+      flex-direction: column !important;
+      font-size: $font-14;
+      img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// Services section
+.services-section {
+  background: $wheat-10;
+  .services-title {
+    font-size: 35px;
+    font-weight: $heavy-bold;
+    color: $gray-10;
+  }
+  .services-subtitle {
+    color: $gray-10;
+    opacity: 0.7;
+  }
+}
+// Contact section
+.contact-section {
+    background: $green-30;
+    .contact-title {
+      font-size: 35px;
+      font-weight: $heavy-bold;
+      color: $white-10;
+    }
+    .contact-subtitle {
+      color: $white-10;
+      opacity: 0.7;
+    }
+    .call-det {
+        font-size: 30px;
+        margin-left: 7px;
+        font-weight: $heavy-bold;
+        color: $yellow-10;
+    }
+    .call-text {
+        font-size: $font-14;
+        color: $white-10;
+        a {
+            text-decoration: none;
+            color: $gray-10;
+            font-weight: $w-bold;
+        }
+    }
+    .text-padd {
+        padding: 0px 180px 0 80px;
+    }
+}
+// About us section
+.about-us-section {
+    background-image: url("../../assets/about-us-background.jpg");
+    background-repeat: no-repeat;
+    // background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+    // padding: 75px 0;
+    .about-us-title {
+      font-size: 45px;
+      font-weight: 100;
+    }
+    p {
+      font-weight: $w-bold;
+    }
+    .about-us-parag {
+      color: $white-10;
+    }
+}
+
+// Footer
+footer {
+  background: $white-10;
+  small {
+    margin: 0 25px;
+    color: $gray-10;
+  }
+  .copyright{
+    text-align: center;
+  }
+}

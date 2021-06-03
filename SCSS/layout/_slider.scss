@@ -1,0 +1,77 @@
+@import "../../node_modules/bootstrap/scss/utilities/_flex.scss";
+//Nested Slider
+#carouselExampleIndicators {
+    display: flex;
+    max-width: 1140px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 7%;
+    .carousel-inner {
+        width: 75%;
+    }
+    .carousel-indicators {
+      bottom: -100px;
+      li {
+        border-radius: 50%;
+        background: transparent;
+        border: 2px solid white;
+        width: 15px;
+        height: 15px;
+        pointer-events: none;
+      }
+    }
+    .carousel-indicators .active {
+        background: $white-10;
+    }
+    .carousel-control-prev-icon {
+      cursor: pointer;
+    }
+    .carousel-control-next-icon {
+      cursor: pointer;
+    }
+    .carousel-custom-next-icon,
+    .carousel-custom-prev-icon {
+      height: 90px;
+      width: 96px;
+    }
+    .carousel-custom-prev-icon {
+      background: url(../assets/james-selected.png);
+    }
+    .carousel-custom-next-icon {
+      background: url(../assets/mathilda.png);
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 96px;
+      height: 90px;
+      &:active {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 96px;
+        height: 90px;
+      }
+    }
+    h2, h5 {
+      color: $white-10;
+    }
+    h2 {
+        font-size: 45px;
+        // margin-bottom: 60px;
+        font-weight: 200;
+    }
+    .nested-slider-par {
+      color: white;
+    }
+    p {
+      text-align: center;
+      span {
+        color: $yellow-10;
+        cursor: pointer;
+        font-style: italic;
+      }
+    }
+  }

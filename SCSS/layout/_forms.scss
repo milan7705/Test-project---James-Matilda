@@ -1,0 +1,24 @@
+.forms-det {
+    .personal-det {
+        width: 60% !important;
+    }
+    input {
+        background: $green-30;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+        &:focus {
+            background: $green-30;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            box-shadow: none; 
+            color: $white-10; 
+            border-color: $white-10;
+        }
+    }
+input::placeholder {
+    color: $white-10;
+}
+}

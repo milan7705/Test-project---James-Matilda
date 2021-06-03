@@ -1,0 +1,53 @@
+.navbar-jm {
+  z-index: 100;
+  @include media-breakpoint-down(md) {
+      .left-nav-detail {
+          &-line {
+              display: none;
+          }
+      }
+      .breakpoint-none {
+          display: none;
+      }
+  }
+  .dh-drop {
+    color: $green-20 !important;
+    font-weight: $w-bold;
+  }
+  .left-nav-detail {
+    color: $yellow-10;
+    font-weight: $w-bold;
+    &:hover {
+      color: $white-10;
+    }
+    &-line {
+      &:hover {
+        color: $yellow-10;
+      }
+    }
+  }
+  .jm-toggler-border {
+    border: 2px solid $white-10 !important;
+    border-radius: inherit;
+    &:focus {
+      outline: none;
+    }
+    i {
+      color: $white-10;
+    }
+  }
+  .jm-services {
+    color: $white-10;
+    font-weight: $w-bold;
+    span {
+      color: $green-20;
+      font-weight: $w-bold;
+    }
+  }
+  .jm-random {
+    color: $green-10;
+    font-weight: $w-bold;
+    position: absolute;
+    top: 29px;
+  }
+}
